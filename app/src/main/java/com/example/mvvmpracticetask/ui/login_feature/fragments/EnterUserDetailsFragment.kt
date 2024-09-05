@@ -16,6 +16,7 @@ import com.example.mvvmpracticetask.databinding.FragmentEnterUserDetailsBinding
 import com.example.mvvmpracticetask.db.models.User
 import com.example.mvvmpracticetask.utils.AppUtils
 import com.example.mvvmpracticetask.utils.DatabaseResponse
+import com.example.mvvmpracticetask.utils.FormValidator
 import com.example.mvvmpracticetask.viewmodels.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
@@ -158,7 +159,7 @@ class EnterUserDetailsFragment : Fragment() {
     }
 
     private fun isDetailsValid(): Boolean {
-        return !viewBinding.editTextUserName.text.isNullOrEmpty() && !viewBinding.editTextAddress.text.isNullOrEmpty() && getAgeBySelectedDate() >= 18
+        return FormValidator.isFormValid(viewBinding.editTextUserName.text.toString(),viewBinding.editTextAddress.text.toString(),getDatePickerTimeInMillis())
     }
 
     private fun getAgeBySelectedDate(): Int {
