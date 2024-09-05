@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="grey_1">#F0F0F0</color>
+    <color name="grey_2">#D2D2D2</color>
+    <color name="grey_3">#999D9E</color>
+    <color name="grey_4">#545557</color>
+    <color name="red">#F03D3D</color>
+    <color name="green_success">#0BAA60</color>
+    <color name="blue_success">#3377FF</color>
+
+    <color name="blue_button_color">#4A36EC</color>
+    <color name="blue_button_pressed_color">#2918B3</color>
+    <color name="log_out_button">#AC3434</color>
+</resources>
